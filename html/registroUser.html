@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e inicio de sesion</title>
+    <script src="../js/registroUser.js"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <div class="registro">
+
+        <h2>Registrarse</h2>
+
+        Identificador de usuario <br>
+        <input type="text" id="usuario" placeholder="Ingrese Identificador"> <br>
+
+        Clave: <br>
+        <input type="password" id="password" placeholder="Inrese Clave"> <br>
+
+        Perfil <br>
+        <select id="profile">
+            <option value="administrativo">Administrativo</option>
+            <option value="funcionario">Funcionario</option>
+            <option value="docente">Docente</option>
+        </select> <br> <br>
+        <button class="btn" onclick="registroUsuaio()">Registrar</button>
+    </div> <br>
+
+
+
+    <div class="login">
+
+        <h2>Iniciar sesión</h2>
+
+        Identificador de usuario: <br>
+        <input type="text" id="identificador" placeholder="Ingrese Identificador"> <br>
+
+        Clave: <br>
+        <input type="password" id="clave" placeholder="Ingrese Clave"> <br> <br>
+
+        <button class="btn" onclick="iniciarSesion()">Iniciar sesión</button>
+
+    </div>
+    <div id="error-message" class="error"></div>
+
+</body>
+
+</html>
